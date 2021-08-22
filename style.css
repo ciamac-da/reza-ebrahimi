@@ -187,6 +187,13 @@ h1:hover{
     .projects-section-header {
       font-size: 4rem;
     }
+    h1 {
+      font-size: 35px;
+      padding: 20px;
+    }
+  .welcome-section > p {
+    font-size: 25px;
+  }
   }
   
   /* "Automagic" image grid using no media queries */
@@ -311,6 +318,8 @@ h1:hover{
   
   .contact-section-header > p {
     font-style: italic;
+    color: var(--main-blue);
+    font-size: 20px;;
   }
   
   .contact-links {
@@ -321,17 +330,23 @@ h1:hover{
     margin-top: 4rem;
     flex-wrap: wrap;
   }
-  
+ 
   .contact-details {
     font-size: 2.4rem;
-    text-shadow: 2px 2px 1px #1f1f1f;
-    transition: transform 0.3s ease-out;
+    color:var(--main-blue);
+    transition: transform 0.5s ease-in;
+    margin: 10px;
+  
   }
   
   .contact-details:hover {
     transform: translateY(8px);
+    border-bottom: 1px var(--main-blue) solid;
+    transition: transform 0.5s ease-out;
   }
-  
+  .icons {
+    color: var(--main-blue) !important;
+  }
   /* Footer */
   
   footer {
@@ -339,7 +354,7 @@ h1:hover{
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    background: var(--main-white);
+    background: var(--main-blue);
     border-top: 4px solid var(--main-red);
   }
   
