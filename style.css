@@ -1,15 +1,17 @@
 /* Custom properties/variables  */
 :root {
     --main-white: #f0f0f0;
-    --main-red: #9c1c30;
-    --main-lemon: #a1aa25;
+    --main-blue: #082e79;
+    --main-lemon: #aeab2c;
     --main-gray: #303841;
   }
   
   /* Base reset */
   * {
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Ubuntu', sans-serif !important;
   }
   
   /* box-sizing and font sizing */
@@ -21,29 +23,12 @@
   
   html {
     box-sizing: border-box;
-  
-    /* Set font size for easy rem calculations
-     * default document font size = 16px, 1rem = 16px, 100% = 16px
-     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-    */
     font-size: 62.5%;
     scroll-behavior: smooth;
+    font-family: 'Ubuntu', sans-serif !important;
   }
   
-  /* A few media query to set some font sizes at different screen sizes.
-   * This helps automate a bit of responsiveness.
-   * The trick is to use the rem unit for size values, margin and padding.
-   * Because rem is relative to the document font size
-   * when we scale up or down the font size on the document
-   * it will affect all properties using rem units for the values.
-  */
-  
-  /* I am using the em unit for breakpoints
-   * The calculation is the following
-   * screen size divided by browser base font size
-   * As an example: a breakpoint at 980px
-   * 980px / 16px = 61.25em
-  */
+ 
   
   /* 1200px / 16px = 75em */
   @media (max-width: 75em) {
@@ -69,11 +54,11 @@
   /* Base styles */
   
   body {
-    font-family: 'Poppins', sans-serif;
     font-size: 1.8rem; /* 18px */
     font-weight: 400;
     line-height: 1.4;
     color: var(--main-white);
+    font-family: 'Ubuntu', sans-serif !important;
   }
   
   h1,
@@ -81,12 +66,16 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-align: center;
+    color: var(--main-blue);
+    transform: translateY(0px) !important;
+    transition: 1s;
 
   }
 
 h1:hover{
-  color: var(--main-red);
-  transform: translateX(10px) !important;
+  color: var(--main-blue);
+  transform: translateY(10px) !important;
+  transition: 1s;
 }
 
   
@@ -121,7 +110,7 @@ h1:hover{
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--main-red);
+    background: var(--main-blue);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 10;
   }
@@ -145,6 +134,7 @@ h1:hover{
     display: block;
     font-size: 2.2rem;
     padding: 2rem;
+    transition: 1s;
   }
   
   .nav-list a:hover {
@@ -160,15 +150,14 @@ h1:hover{
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #000;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background-color:var(--main-white);
   }
   
   .welcome-section > p {
     font-size: 4rem;
     font-weight: 200;
     font-style: italic;
-    color: var(--main-red);
+    color: var(--main-blue);
   }
   
   /* Projects section */
@@ -183,6 +172,7 @@ h1:hover{
     max-width: 640px;
     margin: 0 auto 6rem auto;
     border-bottom: 0.2rem solid var(--main-white);
+    color: var(--main-white)
   }
   
   @media (max-width: 28.75em) {
@@ -213,13 +203,13 @@ h1:hover{
   }
   
   .project {
-    background: var(--main-gray);
+    background: var(--main-white);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
   }
   
   .code {
-    color: var(--main-gray);
+    color: var(--main-white);
     transition: color 0.3s ease-out;
   }
   
@@ -246,12 +236,12 @@ h1:hover{
   
   .btn-show-all {
     font-size: 2rem;
-    background: var(--main-gray);
+    background: var(--main-white);
     transition: background 0.3s ease-out;
   }
   
   .btn-show-all:hover {
-    background: var(--main-red);
+    background: var(--main-blue);
   }
   
   .btn-show-all:hover > i {
@@ -275,7 +265,7 @@ h1:hover{
     width: 100%;
     height: 80vh;
     padding: 0 2rem;
-    background: var(--main-gray);
+    background: var(--main-white);
   }
   
   .contact-section-header > h2 {
@@ -318,7 +308,7 @@ h1:hover{
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    background: var(--main-gray);
+    background: var(--main-white);
     border-top: 4px solid var(--main-red);
   }
   
