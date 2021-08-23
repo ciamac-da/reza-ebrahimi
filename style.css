@@ -3,7 +3,6 @@
     --main-white: #f0f0f0;
     --main-blue: #082e79;
     --main-lemon: #aeab2c;
-    --main-gray: #303841;
   }
   
   /* Base reset */
@@ -344,9 +343,7 @@ h1:hover{
     border-bottom: 1px var(--main-blue) solid;
     transition: transform 0.5s ease-out;
   }
-  .icons {
-    color: var(--main-blue) !important;
-  }
+  
   /* Footer */
   
   footer {
