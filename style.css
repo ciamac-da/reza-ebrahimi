@@ -404,6 +404,7 @@ h1:hover{
   .nav-list {
     display: flex;
     justify-content: center;
+    text-align: center;
   }
   .contact-section {
     margin-top: 20px;
