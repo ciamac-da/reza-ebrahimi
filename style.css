@@ -3,6 +3,7 @@
     --main-white: #f0f0f0;
     --main-blue: #082e79;
     --main-lemon: #aeab2c;
+    --main-dark: #000
   }
   
   /* Base reset */
@@ -159,7 +160,27 @@ h1:hover{
     height: 100vh;
     background-color:var(--main-white);
   }
-  
+
+  .welcome-section-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .welcome-section-details__items {
+    color: var(--main-blue);
+    font-size: 20px;
+    padding: 10px;
+    transform: translateY(0px) !important;
+    transition: 1s;
+  }
+
+  .welcome-section-details__items:hover {
+    background: var(--main-lemon);
+    color: var(--main-white);
+    transform: translateY(10px) !important;
+  }
+
   .welcome-section > p {
     font-size: 4rem;
     font-weight: 200;

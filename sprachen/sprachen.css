@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #082e79;
+}
+
+.sprachen-section {
+    display: flex;
+    justify-content:center;
+    margin: 100px auto;
+    width: 70%;
+    background-color: #aeab2c;
+    border-radius: 10px;
+  }
+
+.sprachen {
+    color: var(--main-white);
+    font-size: 40px;
+    padding: 20px;
+    font-weight: bolder;
+    color: #f0f0f0;
+  }
+
+  @media (max-width: 425px) {
+    .sprachen {
+        font-size: 16px !important;
+        color: #f0f0f0;
+      }
+  }
+
+  @media (min-width: 426px) and (max-width: 768px) {
+    .sprachen {
+        font-size: 30px !important;
+        color: #f0f0f0;
+      }
+  }
